@@ -29,7 +29,7 @@ export default function Forecast() {
       </div>
       <p className="source-code mt-3">
         <a
-          href="https://github.com/celenaal/Weather-Project.git"
+          href="https://github.com/celenaal/weather-react-app.git"
           target="_blank"
           rel="noreferrer"
         >
