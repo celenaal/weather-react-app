@@ -1,0 +1,41 @@
+li {
+  list-style: none;
+  color: rgb(114, 73, 12);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-align: start;
+}
+form {
+  padding: 5px 0px;
+  margin-bottom: 0;
+}
+.container{
+    max-width: 700px;
+}
+.City {
+  font-weight: 700;
+  color: #c24d2c;
+  font-size: 30px;
+  margin-bottom: 0;
+  text-align: start;
+}
+.Day {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.button {
+  background-color: white;
+  color: black;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: lightslategrey 5px;
+}
+.button:hover {
+  background-color: #c24d2c;
+  color: white;
+  transition: ease 0.05s;
+}
