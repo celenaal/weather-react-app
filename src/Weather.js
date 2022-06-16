@@ -13,15 +13,20 @@ export default function Weather() {
     <div>
       <div className="container mt-3">
         <div className="row">
-          <div className="col-7">
+          <div className="col-6">
             <form id="search-form">
-              <input id="place-input" type="text" placeholder="Enter City" />
-              <input className="button" type="Submit" value="Search" />
+              <input
+                id="place-input"
+                type="text"
+                placeholder="Enter City"
+                autoFocus="on"
+              />
+              <input className="button w-45" type="Submit" value="Search" />
             </form>
           </div>
           <div className="col-5">
             <form id="current-location">
-              <input className="button" type="Submit" value="Current" />
+              <input className="button w-45" type="Submit" value="Current" />
             </form>
           </div>
         </div>
@@ -41,19 +46,22 @@ export default function Weather() {
         </div>
       </div>
       <div className="row">
-        <div className="col-2 Current">Current</div>
-        <div className="col-2">
+        <div className="col-2 mr-3">
           <img
             src="http://openweathermap.org/img/wn/01d@2x.png"
             alt="Clear"
-            className="float-left"
             id="icon"
+            className="Current float-left"
           />
         </div>
-        <div className="col-2 Today">
-          <span id="main-tempt"> 68</span> <span class="units">°C </span>
+        <div className="col-3 Today">
+          <span className="float-left" id="main-tempt">
+            {" "}
+            68
+          </span>{" "}
+          <span class="units">°C | °F </span>
         </div>
-        <div className="col-2"></div>
+        <div className="col-3"></div>
         <div className="col-4">
           <ul>
             <li>

@@ -8,17 +8,18 @@ li {
   text-align: start;
 }
 form {
-  padding: 5px 0px;
-  margin-bottom: 0;
+  padding: 0px;
 }
-.container{
-    max-width: 700px;
+.container {
+  max-width: 700px;
+  padding: 15px 20px;
 }
 .City {
   font-weight: 700;
   color: #c24d2c;
   font-size: 30px;
   margin-bottom: 0;
+  padding: 0px 10px;
   text-align: start;
 }
 .Day {
@@ -26,6 +27,7 @@ form {
   font-weight: 600;
   font-size: 20px;
   margin-top: 20px;
+  padding: 0px 25px;
 }
 .button {
   background-color: white;
@@ -38,4 +40,13 @@ form {
   background-color: #c24d2c;
   color: white;
   transition: ease 0.05s;
+}
+.Current {
+  padding: 0px 30px;
+}
+#main-tempt {
+  font-size: 30px;
+}
+.units {
+  font-size: 30px;
 }
