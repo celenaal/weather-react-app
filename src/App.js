@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather.js";
+import Weather from "./Weather";
 
 import "./App.css";
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="card">
-          <Weather />
+          <Weather defaultCity="Los Angeles"/>
         </div>
       </div>
     </div>

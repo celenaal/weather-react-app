@@ -14,6 +14,9 @@ form {
   max-width: 700px;
   padding: 15px 20px;
 }
+.WeatherInfo{
+max-width: 700px;
+}
 .City {
   font-weight: 700;
   color: #c24d2c;
