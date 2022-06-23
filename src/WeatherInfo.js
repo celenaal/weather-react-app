@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 import "./Weather.css";
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -27,14 +28,9 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-2 mr-3">
-          <img
-            src={props.data.iconUrl}
-            alt="Clear"
-            id="icon"
-            className="Current float-left"
-          />
+          <WeatherIcon code={props.data.icon} size={52} />
         </div>
-        <div className="col-4 Today">
+        <div className="col-4 Today float-left">
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
         <div className="col-6">
@@ -48,16 +44,6 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <p className="source-code mt-3">
-        <a
-          href="https://github.com/celenaal/weather-react-app.git"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-source code
-        </a>
-        -by Celena Alvarado
-      </p>
     </div>
   );
 }

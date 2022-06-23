@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -10,13 +11,14 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -48,13 +50,19 @@ export default function Weather(props) {
               />
               <input className="button w-45" type="Submit" value="Search" />
             </form>
-            <WeatherInfo data={weatherData} />
           </div>
-          <div className="col-5">
-            <form id="current-location">
-              <input className="button w-45" type="Submit" value="Current" />
-            </form>
-          </div>
+          <WeatherInfo data={weatherData} />
+          <WeatherForecast size={36} coordinates={weatherData.coordinates} />
+          <p className="source-code mt-3">
+            <a
+              href="https://github.com/celenaal/weather-react-app.git"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-source code
+            </a>
+            -by Celena Alvarado
+          </p>
         </div>
       </div>
     );

@@ -11,11 +11,6 @@ export default function Search() {
             <input className="button" type="Submit" value="Search" />
           </form>
         </div>
-        <div className="col-4">
-          <form id="current-location">
-            <input className="button" type="Submit" value="Current" />
-          </form>
-        </div>
       </div>
     </div>
   );
